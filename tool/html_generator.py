@@ -81,12 +81,24 @@ def generate_grid_html(listings):
         local_images = listing.get("local_images", [])
         thumb = f"{IMAGE_BASE_URL}/{local_images[0]}" if local_images else ""
 
+        # Build display name: use full_name minus the make prefix for richer card titles
+        full_name = listing.get("full_name", "")
+        make = listing["make"]
+        if full_name and full_name.upper().startswith(make.upper()):
+            display_name = full_name[len(make):].strip()
+        elif full_name:
+            display_name = full_name
+        else:
+            display_name = listing["model"]
+        if not display_name:
+            display_name = listing["model"]
+
         card = _render(card_tpl, {
             "detail_url": f"{GITHUB_PAGES_URL}/detail/{slug}.html",
             "image_url": thumb,
             "make": listing["make"],
             "make_upper": listing["make"].upper(),
-            "model": listing["model"],
+            "model": display_name,
             "year": listing["year"] if listing["year"] else "Neuf",
             "mileage_fmt": format_km(listing["mileage"]),
             "price_fmt": format_chf(listing["price"]),

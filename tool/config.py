@@ -17,7 +17,7 @@ SITE_URL = "https://www.peregocars.com"
 # ── GitHub Pages ──
 # IMPORTANT: Update this after creating your GitHub repo
 # Format: https://<username>.github.io/<repo-name>
-GITHUB_PAGES_URL = "https://gregoryperego-prog.github.io/inventory"
+GITHUB_PAGES_URL = "https://peregocars.github.io/inventory"
 
 # ── Paths ──
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
