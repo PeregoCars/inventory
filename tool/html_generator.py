@@ -365,7 +365,7 @@ def generate_detail_pages(listings, custom_data=None):
             "whatsapp_number": WHATSAPP_NUMBER,
             "whatsapp_msg": wa_msg,
             "listing_url": listing["listing_url"],
-            "grid_url": f"{GITHUB_PAGES_URL}/grid.html",
+            "grid_url": f"{SITE_URL}/cars-for-sale",
             "teaser_block": teaser_block,
             "sales_guru": guru_html,
         })
