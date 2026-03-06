@@ -1,0 +1,12 @@
+<a href="{{detail_url}}" class="pc-car-card">
+    <img class="pc-car-img" src="{{image_url}}" alt="{{make}} {{model}} en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">{{make_upper}}</div>
+        <h3 class="pc-car-name">{{model}}</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> {{year}}</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> {{mileage_fmt}} km</span>
+        </div>
+        <div class="pc-car-price">{{price_fmt}}</div>
+    </div>
+</a>

@@ -1,0 +1,304 @@
+<!-- Perego Cars Inventory — Auto-generated 2026-03-06 13:57 -->
+<style>
+:root {
+    --color-primary: #FF4605;
+    --color-primary-light: #FF6B35;
+    --color-text-primary: #1A1A1A;
+    --color-text-muted: #666666;
+    --color-surface: #FFFFFF;
+    --color-background: #FAFBFC;
+    --color-border: #E5E7EB;
+    --shadow-sm: 0 2px 12px rgba(0,0,0,0.06);
+    --shadow-md: 0 8px 30px rgba(0,0,0,0.1);
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    --radius-md: 0.75rem;
+    --transition-base: 300ms ease;
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-body); color: var(--color-text-primary); background: var(--color-background); }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+
+.pc-inv-container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+.pc-inv-hero { padding: 3rem 0 2rem; text-align: center; }
+.pc-inv-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: rgba(255,70,5,0.06); color: var(--color-primary);
+    font-size: 0.7rem; font-weight: 700; padding: 0.5rem 1.2rem;
+    border-radius: 50px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1.5rem;
+}
+.pc-inv-title { font-size: clamp(1.8rem,4vw,2.4rem); font-weight: 700; margin-bottom: 0.5rem; }
+.pc-inv-title em { color: var(--color-primary); font-style: italic; }
+.pc-inv-sub { font-size: 1rem; color: var(--color-text-muted); max-width: 600px; margin: 0 auto; line-height: 1.6; }
+
+.pc-cars-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+    padding-bottom: 3rem;
+}
+.pc-car-card {
+    background: var(--color-surface); border: 1px solid var(--color-border);
+    border-radius: var(--radius-md); overflow: hidden; transition: var(--transition-base);
+    text-decoration: none; color: inherit; display: block; cursor: pointer;
+}
+.pc-car-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--color-primary); }
+.pc-car-img { width: 100%; height: 220px; object-fit: cover; }
+.pc-car-body { padding: 1.25rem; }
+.pc-car-brand { font-size: 0.7rem; letter-spacing: 2px; color: var(--color-primary); text-transform: uppercase; font-weight: 600; margin-bottom: 0.3rem; }
+.pc-car-name { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
+.pc-car-specs { display: flex; gap: 1rem; font-size: 0.78rem; color: var(--color-text-muted); margin-bottom: 1rem; }
+.pc-car-specs span { display: flex; align-items: center; gap: 0.3rem; }
+.pc-car-price { font-size: 1.2rem; font-weight: 700; color: var(--color-primary); }
+
+.pc-inv-count {
+    text-align: center; padding: 1rem 0 2rem;
+    font-size: 0.82rem; color: var(--color-text-muted);
+}
+
+@media (max-width: 1024px) { .pc-cars-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) { .pc-cars-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; } }
+</style>
+
+<div class="pc-inv-container">
+    <div class="pc-inv-hero">
+        <div class="pc-inv-badge">Inventaire mis a jour</div>
+        <h1 class="pc-inv-title">Notre <em>inventaire</em></h1>
+        <p class="pc-inv-sub">Explorez notre selection actuelle de vehicules d'exception, rigoureusement inspectes et prets a prendre la route.</p>
+    </div>
+    <div class="pc-inv-count">18 vehicules disponibles</div>
+    <div class="pc-cars-grid">
+<a href="https://gregoryperego-prog.github.io/inventory/detail/mclaren-elva-1-of-149-12846263.html" class="pc-car-card">
+    <img class="pc-car-img" src="https://gregoryperego-prog.github.io/inventory/images/mclaren-elva-1-of-149-12846263-01.jpg" alt="Mclaren Elva - 1 of 149 en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">MCLAREN</div>
+        <h3 class="pc-car-name">Elva - 1 of 149</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2025</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> 395 km</span>
+        </div>
+        <div class="pc-car-price">CHF 1'550'000.--</div>
+    </div>
+</a>
+
+<a href="https://gregoryperego-prog.github.io/inventory/detail/ferrari-f550-12836951.html" class="pc-car-card">
+    <img class="pc-car-img" src="https://gregoryperego-prog.github.io/inventory/images/ferrari-f550-12836951-01.jpg" alt="Ferrari F550 en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">FERRARI</div>
+        <h3 class="pc-car-name">F550</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2002</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> 1'755 km</span>
+        </div>
+        <div class="pc-car-price">CHF 550'000.--</div>
+    </div>
+</a>
+
+<a href="https://gregoryperego-prog.github.io/inventory/detail/alfa-romeo-giulietta-12764100.html" class="pc-car-card">
+    <img class="pc-car-img" src="https://gregoryperego-prog.github.io/inventory/images/alfa-romeo-giulietta-12764100-01.jpg" alt="Alfa Romeo GIULIETTA en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">ALFA ROMEO</div>
+        <h3 class="pc-car-name">GIULIETTA</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1962</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> 99'999 km</span>
+        </div>
+        <div class="pc-car-price">CHF 350'000.--</div>
+    </div>
+</a>
+
+<a href="https://gregoryperego-prog.github.io/inventory/detail/aston-martin-770-ultimate-20163883.html" class="pc-car-card">
+    <img class="pc-car-img" src="https://gregoryperego-prog.github.io/inventory/images/aston-martin-770-ultimate-20163883-01.jpg" alt="Aston Martin 770 Ultimate en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">ASTON MARTIN</div>
+        <h3 class="pc-car-name">770 Ultimate</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2024</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> 2'360 km</span>
+        </div>
+        <div class="pc-car-price">CHF 345'000.--</div>
+    </div>
+</a>
+
+<a href="https://gregoryperego-prog.github.io/inventory/detail/porsche-911-20046425.html" class="pc-car-card">
+    <img class="pc-car-img" src="https://gregoryperego-prog.github.io/inventory/images/porsche-911-20046425-01.jpg" alt="Porsche 911 en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">PORSCHE</div>
+        <h3 class="pc-car-name">911</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2023</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> 650 km</span>
+        </div>
+        <div class="pc-car-price">CHF 319'900.--</div>
+    </div>
+</a>
+
+<a href="https://gregoryperego-prog.github.io/inventory/detail/porsche-911-12908062.html" class="pc-car-card">
+    <img class="pc-car-img" src="https://gregoryperego-prog.github.io/inventory/images/porsche-911-12908062-01.jpg" alt="Porsche 911 en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">PORSCHE</div>
+        <h3 class="pc-car-name">911</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2018</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> 20'685 km</span>
+        </div>
+        <div class="pc-car-price">CHF 235'000.--</div>
+    </div>
+</a>
+
+<a href="https://gregoryperego-prog.github.io/inventory/detail/lamborghini-urus-20061800.html" class="pc-car-card">
+    <img class="pc-car-img" src="https://gregoryperego-prog.github.io/inventory/images/lamborghini-urus-20061800-01.jpg" alt="Lamborghini URUS en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">LAMBORGHINI</div>
+        <h3 class="pc-car-name">URUS</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2020</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> 80'880 km</span>
+        </div>
+        <div class="pc-car-price">CHF 184'900.--</div>
+    </div>
+</a>
+
+<a href="https://gregoryperego-prog.github.io/inventory/detail/ferrari-458-12918611.html" class="pc-car-card">
+    <img class="pc-car-img" src="https://gregoryperego-prog.github.io/inventory/images/ferrari-458-12918611-01.jpg" alt="Ferrari 458 en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">FERRARI</div>
+        <h3 class="pc-car-name">458</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2014</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> 105'350 km</span>
+        </div>
+        <div class="pc-car-price">CHF 149'900.--</div>
+    </div>
+</a>
+
+<a href="https://gregoryperego-prog.github.io/inventory/detail/aston-martin-dbs-20253356.html" class="pc-car-card">
+    <img class="pc-car-img" src="https://gregoryperego-prog.github.io/inventory/images/aston-martin-dbs-20253356-01.jpg" alt="Aston Martin DBS en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">ASTON MARTIN</div>
+        <h3 class="pc-car-name">DBS</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2008</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> 49'120 km</span>
+        </div>
+        <div class="pc-car-price">CHF 129'500.--</div>
+    </div>
+</a>
+
+<a href="https://gregoryperego-prog.github.io/inventory/detail/porsche-911-20180834.html" class="pc-car-card">
+    <img class="pc-car-img" src="https://gregoryperego-prog.github.io/inventory/images/porsche-911-20180834-01.jpg" alt="Porsche 911 en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">PORSCHE</div>
+        <h3 class="pc-car-name">911</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2018</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> 36'880 km</span>
+        </div>
+        <div class="pc-car-price">CHF 118'900.--</div>
+    </div>
+</a>
+
+<a href="https://gregoryperego-prog.github.io/inventory/detail/ferrari-f430-20247208.html" class="pc-car-card">
+    <img class="pc-car-img" src="https://gregoryperego-prog.github.io/inventory/images/ferrari-f430-20247208-01.jpg" alt="Ferrari F430 en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">FERRARI</div>
+        <h3 class="pc-car-name">F430</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2007</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> 65'000 km</span>
+        </div>
+        <div class="pc-car-price">CHF 94'900.--</div>
+    </div>
+</a>
+
+<a href="https://gregoryperego-prog.github.io/inventory/detail/aston-martin-v8-vantage-20253789.html" class="pc-car-card">
+    <img class="pc-car-img" src="https://gregoryperego-prog.github.io/inventory/images/aston-martin-v8-vantage-20253789-01.jpg" alt="Aston Martin V8 Vantage en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">ASTON MARTIN</div>
+        <h3 class="pc-car-name">V8 Vantage</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2011</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> 20'500 km</span>
+        </div>
+        <div class="pc-car-price">CHF 69'900.--</div>
+    </div>
+</a>
+
+<a href="https://gregoryperego-prog.github.io/inventory/detail/alfa-romeo-4c-20145226.html" class="pc-car-card">
+    <img class="pc-car-img" src="https://gregoryperego-prog.github.io/inventory/images/alfa-romeo-4c-20145226-01.jpg" alt="Alfa Romeo 4C en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">ALFA ROMEO</div>
+        <h3 class="pc-car-name">4C</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2016</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> 29'850 km</span>
+        </div>
+        <div class="pc-car-price">CHF 69'000.--</div>
+    </div>
+</a>
+
+<a href="https://gregoryperego-prog.github.io/inventory/detail/porsche-macan-20254924.html" class="pc-car-card">
+    <img class="pc-car-img" src="https://gregoryperego-prog.github.io/inventory/images/porsche-macan-20254924-01.jpg" alt="Porsche MACAN en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">PORSCHE</div>
+        <h3 class="pc-car-name">MACAN</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2020</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> 67'400 km</span>
+        </div>
+        <div class="pc-car-price">CHF 61'900.--</div>
+    </div>
+</a>
+
+<a href="https://gregoryperego-prog.github.io/inventory/detail/porsche-911-12846179.html" class="pc-car-card">
+    <img class="pc-car-img" src="https://gregoryperego-prog.github.io/inventory/images/porsche-911-12846179-01.jpg" alt="Porsche 911 en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">PORSCHE</div>
+        <h3 class="pc-car-name">911</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2007</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> 70'380 km</span>
+        </div>
+        <div class="pc-car-price">CHF 56'900.--</div>
+    </div>
+</a>
+
+<a href="https://gregoryperego-prog.github.io/inventory/detail/porsche-911-12871786.html" class="pc-car-card">
+    <img class="pc-car-img" src="https://gregoryperego-prog.github.io/inventory/images/porsche-911-12871786-01.jpg" alt="Porsche 911 en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">PORSCHE</div>
+        <h3 class="pc-car-name">911</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2006</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> 76'730 km</span>
+        </div>
+        <div class="pc-car-price">CHF 49'900.--</div>
+    </div>
+</a>
+
+<a href="https://gregoryperego-prog.github.io/inventory/detail/porsche-panamera-20027207.html" class="pc-car-card">
+    <img class="pc-car-img" src="https://gregoryperego-prog.github.io/inventory/images/porsche-panamera-20027207-01.jpg" alt="Porsche PANAMERA en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">PORSCHE</div>
+        <h3 class="pc-car-name">PANAMERA</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2019</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> 147'400 km</span>
+        </div>
+        <div class="pc-car-price">CHF 47'900.--</div>
+    </div>
+</a>
+
+<a href="https://gregoryperego-prog.github.io/inventory/detail/porsche-cayenne-20189497.html" class="pc-car-card">
+    <img class="pc-car-img" src="https://gregoryperego-prog.github.io/inventory/images/porsche-cayenne-20189497-01.jpg" alt="Porsche CAYENNE en vente chez Perego Cars" loading="lazy" decoding="async" width="400" height="220">
+    <div class="pc-car-body">
+        <div class="pc-car-brand">PORSCHE</div>
+        <h3 class="pc-car-name">CAYENNE</h3>
+        <div class="pc-car-specs">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2014</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg> 141'000 km</span>
+        </div>
+        <div class="pc-car-price">CHF 27'900.--</div>
+    </div>
+</a>
+
+    </div>
+</div>
