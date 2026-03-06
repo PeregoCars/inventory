@@ -13,28 +13,63 @@ logger = logging.getLogger(__name__)
 
 def fetch_listings():
     """Fetch all Perego Cars listings from AutoScout24 HCI search page."""
-    logger.info(f"Fetching {SEARCH_URL}")
+    all_raw_listings = []
+    seen_ids = set()
+    max_pages = 10  # Safety limit
 
-    req = urllib.request.Request(SEARCH_URL, headers=REQUEST_HEADERS)
-    response = urllib.request.urlopen(req, timeout=30)
-    html = response.read().decode("utf-8")
+    for page_num in range(max_pages):
+        # Page 0 = default URL, Page 1+ = ?page=N
+        if page_num == 0:
+            url = SEARCH_URL
+        else:
+            url = f"{SEARCH_URL}?page={page_num}"
 
-    logger.info(f"Page fetched: {len(html)} bytes")
+        logger.info(f"Fetching page {page_num + 1}: {url}")
 
-    # Extract from Next.js RSC streaming payload
-    raw_listings = _extract_from_rsc_payload(html)
+        req = urllib.request.Request(url, headers=REQUEST_HEADERS)
+        response = urllib.request.urlopen(req, timeout=30)
+        html = response.read().decode("utf-8")
 
-    if not raw_listings:
-        # Fallback: extract from rendered HTML alt texts + image URLs
-        raw_listings = _extract_from_html(html)
+        logger.info(f"Page {page_num + 1} fetched: {len(html)} bytes")
 
-    if not raw_listings:
-        logger.error("Could not extract listings from page")
+        # Extract from Next.js RSC streaming payload
+        raw_listings = _extract_from_rsc_payload(html)
+
+        if not raw_listings:
+            # Fallback: extract from rendered HTML alt texts + image URLs
+            raw_listings = _extract_from_html(html)
+
+        if not raw_listings:
+            logger.info(f"No more listings found on page {page_num + 1}, stopping.")
+            break
+
+        # Deduplicate by listing ID
+        new_count = 0
+        for raw in raw_listings:
+            lid = str(raw.get("as24Id", raw.get("id", raw.get("listingId", ""))))
+            if lid and lid not in seen_ids:
+                seen_ids.add(lid)
+                all_raw_listings.append(raw)
+                new_count += 1
+
+        logger.info(f"Page {page_num + 1}: {new_count} new listings (total so far: {len(all_raw_listings)})")
+
+        # Check if there are more pages (look for pagination link)
+        if f'page={page_num + 1}' not in html and page_num > 0:
+            logger.info("No next page link found, stopping.")
+            break
+
+        # If this page returned no new results, stop
+        if new_count == 0:
+            break
+
+    if not all_raw_listings:
+        logger.error("Could not extract listings from any page")
         return []
 
     # Normalize
     listings = []
-    for raw in raw_listings:
+    for raw in all_raw_listings:
         car = _normalize_listing(raw)
         if car:
             listings.append(car)
@@ -42,7 +77,7 @@ def fetch_listings():
     # Sort by price descending (most expensive first)
     listings.sort(key=lambda x: x["price"], reverse=True)
 
-    logger.info(f"Extracted {len(listings)} listings")
+    logger.info(f"Extracted {len(listings)} listings total")
     return listings
 
 
@@ -153,10 +188,16 @@ def _try_parse_json_object(text):
         elif c == '}':
             depth -= 1
             if depth == 0:
+                candidate = text[:i + 1]
                 try:
-                    return json.loads(text[:i + 1])
+                    return json.loads(candidate)
                 except json.JSONDecodeError:
-                    return None
+                    # Clean control characters (newlines in teaser text etc.)
+                    cleaned = re.sub(r'[\x00-\x1f]', ' ', candidate)
+                    try:
+                        return json.loads(cleaned)
+                    except json.JSONDecodeError:
+                        return None
     return None
 
 
