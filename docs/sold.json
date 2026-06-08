@@ -1265,5 +1265,47 @@
       "ferrari-testar-512-20323192-15.jpg"
     ],
     "sold_date": "2026-06-04"
+  },
+  {
+    "id": "20145226",
+    "make": "Alfa Romeo",
+    "model": "4C",
+    "full_name": "4C Spider 1750 TBi TCT",
+    "price": 59900,
+    "mileage": 29850,
+    "year": 2016,
+    "horsepower": 241,
+    "fuel_type": "petrol",
+    "transmission": "semi-automatic",
+    "body_type": "cabriolet",
+    "images": [
+      "https://images.autoscout24.ch/public/listing/226/20145226/456296876.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/226/20145226/1419310157.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/226/20145226/503976708.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/226/20145226/1348398563.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/226/20145226/2079026018.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/226/20145226/1050806139.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/226/20145226/2102921880.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/226/20145226/1310153849.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/226/20145226/643645760.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/226/20145226/1587323095.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/226/20145226/1479767409.jpg?w=768"
+    ],
+    "listing_url": "https://www.autoscout24.ch/fr/d/20145226",
+    "teaser": "Voiture très soignée - 2 propriétaires - couleur spécial rouge Alfa de la présentation - pot d'échappement sport - historique des services suivis - rétroviseurs carbones - phares led carbones - assistance parking - jantes 21 - pinces de freins rouge - Vendue avec une expertise du jour et une garantie quality one de 12 mois",
+    "local_images": [
+      "alfa-romeo-4c-20145226-01.jpg",
+      "alfa-romeo-4c-20145226-02.jpg",
+      "alfa-romeo-4c-20145226-03.jpg",
+      "alfa-romeo-4c-20145226-04.jpg",
+      "alfa-romeo-4c-20145226-05.jpg",
+      "alfa-romeo-4c-20145226-06.jpg",
+      "alfa-romeo-4c-20145226-07.jpg",
+      "alfa-romeo-4c-20145226-08.jpg",
+      "alfa-romeo-4c-20145226-09.jpg",
+      "alfa-romeo-4c-20145226-10.jpg",
+      "alfa-romeo-4c-20145226-11.jpg"
+    ],
+    "sold_date": "2026-06-08"
   }
 ]
