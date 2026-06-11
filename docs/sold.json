@@ -1307,5 +1307,55 @@
       "alfa-romeo-4c-20145226-11.jpg"
     ],
     "sold_date": "2026-06-08"
+  },
+  {
+    "id": "20481028",
+    "make": "Audi",
+    "model": "RS6",
+    "full_name": "RS6 Avant 4.0 TFSI V8 quattro",
+    "price": 87900,
+    "mileage": 67100,
+    "year": 2021,
+    "horsepower": 600,
+    "fuel_type": "mhev-petrol",
+    "transmission": "automatic",
+    "body_type": "estate",
+    "images": [
+      "https://images.autoscout24.ch/public/listing/28/20481028/1041537272.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/28/20481028/820244919.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/28/20481028/2036573976.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/28/20481028/180187995.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/28/20481028/457843887.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/28/20481028/421999144.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/28/20481028/1061247634.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/28/20481028/66089376.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/28/20481028/21428385.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/28/20481028/145668080.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/28/20481028/760858628.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/28/20481028/1019881834.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/28/20481028/1133889936.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/28/20481028/1848483804.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/28/20481028/1623633379.jpg?w=768"
+    ],
+    "listing_url": "https://www.autoscout24.ch/fr/d/20481028",
+    "teaser": "Voiture Suisse - 1 propriétaire - Services gratuits 10 ans ou 100'000 kilomètres - Toit ouvrant panoramique -Tempomat adaptatif (ACC) - Cuir exclusif avec Logo rouge sur les sièges et surpiqûre rouge - ceintures rouge - Système Hifi Bang & Olufsen - assistance à la conduite - vitres teintées privacy - coffre électrique - jantes 22 pces - sièges chauffants - sièges électriques avec réglage lombaire et mémory - vendue avec une expertise du jour - service à jour et 12 mois de garantie quality one",
+    "local_images": [
+      "audi-rs6-20481028-01.jpg",
+      "audi-rs6-20481028-02.jpg",
+      "audi-rs6-20481028-03.jpg",
+      "audi-rs6-20481028-04.jpg",
+      "audi-rs6-20481028-05.jpg",
+      "audi-rs6-20481028-06.jpg",
+      "audi-rs6-20481028-07.jpg",
+      "audi-rs6-20481028-08.jpg",
+      "audi-rs6-20481028-09.jpg",
+      "audi-rs6-20481028-10.jpg",
+      "audi-rs6-20481028-11.jpg",
+      "audi-rs6-20481028-12.jpg",
+      "audi-rs6-20481028-13.jpg",
+      "audi-rs6-20481028-14.jpg",
+      "audi-rs6-20481028-15.jpg"
+    ],
+    "sold_date": "2026-06-11"
   }
 ]
