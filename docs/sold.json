@@ -1357,5 +1357,55 @@
       "audi-rs6-20481028-15.jpg"
     ],
     "sold_date": "2026-06-11"
+  },
+  {
+    "id": "20343907",
+    "make": "Audi",
+    "model": "RSQ8",
+    "full_name": "RSQ8 quattro tiptronic",
+    "price": 62900,
+    "mileage": 131700,
+    "year": 2020,
+    "horsepower": 600,
+    "fuel_type": "mhev-petrol",
+    "transmission": "automatic",
+    "body_type": "suv",
+    "images": [
+      "https://images.autoscout24.ch/public/listing/907/20343907/212403920.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/907/20343907/1498232865.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/907/20343907/1450672033.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/907/20343907/1353850194.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/907/20343907/1170713852.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/907/20343907/1929827032.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/907/20343907/201648765.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/907/20343907/323920540.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/907/20343907/1097946435.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/907/20343907/1198326205.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/907/20343907/772557795.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/907/20343907/1394282960.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/907/20343907/1703937203.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/907/20343907/1347905326.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/907/20343907/1784712309.jpg?w=768"
+    ],
+    "listing_url": "https://www.autoscout24.ch/fr/d/20343907",
+    "teaser": "Voiture Suisse, suivi AMAG complet — historique officiel sans rupture, expertise du jour disponible, garantie Quality1 12 mois incluse. Préparation ABT homologuée Suisse — environ 700 ch. Une intervention rare, légale, qui sort votre véhicule du segment standard. Échappement Akrapovic certifié — équipement premium d’une valeur installée de CHF 7’000 à 10’000.   Pack RS – Jantes 22’’ – Intérieur cuir – Sièges électriques avec mémoire – Head-Up Display – Virtual Cockpit – Navigation – Tempomat adaptatif – Assistance à la conduite – Caméras – Hayon électrique   Sonorité sportive maîtrisée – Véhicule suivi sans compromis   Garantie Quality1 12 mois – Expertise du jour possible",
+    "local_images": [
+      "audi-rsq8-20343907-01.jpg",
+      "audi-rsq8-20343907-02.jpg",
+      "audi-rsq8-20343907-03.jpg",
+      "audi-rsq8-20343907-04.jpg",
+      "audi-rsq8-20343907-05.jpg",
+      "audi-rsq8-20343907-06.jpg",
+      "audi-rsq8-20343907-07.jpg",
+      "audi-rsq8-20343907-08.jpg",
+      "audi-rsq8-20343907-09.jpg",
+      "audi-rsq8-20343907-10.jpg",
+      "audi-rsq8-20343907-11.jpg",
+      "audi-rsq8-20343907-12.jpg",
+      "audi-rsq8-20343907-13.jpg",
+      "audi-rsq8-20343907-14.jpg",
+      "audi-rsq8-20343907-15.jpg"
+    ],
+    "sold_date": "2026-06-15"
   }
 ]
