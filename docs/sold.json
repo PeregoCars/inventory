@@ -1553,5 +1553,55 @@
       "porsche-panamera-20027207-14.jpg"
     ],
     "sold_date": "2026-06-22"
+  },
+  {
+    "id": "12918611",
+    "make": "Ferrari",
+    "model": "458",
+    "full_name": "458 Spider Italia 4.5 V8",
+    "price": 139900,
+    "mileage": 105350,
+    "year": 2014,
+    "horsepower": 566,
+    "fuel_type": "petrol",
+    "transmission": "semi-automatic",
+    "body_type": "cabriolet",
+    "images": [
+      "https://images.autoscout24.ch/public/listing/611/12918611/1186454918.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/611/12918611/1031055985.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/611/12918611/761814637.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/611/12918611/1563176261.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/611/12918611/938744527.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/611/12918611/1360152491.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/611/12918611/1514183811.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/611/12918611/1929681751.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/611/12918611/1069105225.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/611/12918611/654704256.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/611/12918611/81881009.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/611/12918611/1816901184.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/611/12918611/785197189.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/611/12918611/1109235151.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/611/12918611/230290546.jpg?w=768"
+    ],
+    "listing_url": "https://www.autoscout24.ch/fr/d/12918611",
+    "teaser": "Voiture livrée neuve en Suisse I Tous les services fait chez Ferrari I très belle I Swiss delivered car I All services made by Ferrari I Very beautiful car",
+    "local_images": [
+      "ferrari-458-12918611-01.jpg",
+      "ferrari-458-12918611-02.jpg",
+      "ferrari-458-12918611-03.jpg",
+      "ferrari-458-12918611-04.jpg",
+      "ferrari-458-12918611-05.jpg",
+      "ferrari-458-12918611-06.jpg",
+      "ferrari-458-12918611-07.jpg",
+      "ferrari-458-12918611-08.jpg",
+      "ferrari-458-12918611-09.jpg",
+      "ferrari-458-12918611-10.jpg",
+      "ferrari-458-12918611-11.jpg",
+      "ferrari-458-12918611-12.jpg",
+      "ferrari-458-12918611-13.jpg",
+      "ferrari-458-12918611-14.jpg",
+      "ferrari-458-12918611-15.jpg"
+    ],
+    "sold_date": "2026-06-24"
   }
 ]
