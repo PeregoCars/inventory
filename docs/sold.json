@@ -1699,5 +1699,53 @@
       "ferrari-599-12015323-13.jpg"
     ],
     "sold_date": "2026-07-01"
+  },
+  {
+    "id": "20544932",
+    "make": "Lotus",
+    "model": "EMIRA",
+    "full_name": "Emira 3.5 V6 First Edition",
+    "price": 88900,
+    "mileage": 4365,
+    "year": 2023,
+    "horsepower": 406,
+    "fuel_type": "petrol",
+    "transmission": "manual",
+    "body_type": "coupe",
+    "images": [
+      "https://images.autoscout24.ch/public/listing/932/20544932/96505925.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/932/20544932/1172940301.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/932/20544932/817584893.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/932/20544932/1536793675.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/932/20544932/1463778812.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/932/20544932/8479828.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/932/20544932/817526650.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/932/20544932/1921081663.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/932/20544932/2045839863.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/932/20544932/326662990.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/932/20544932/1636149773.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/932/20544932/1215887197.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/932/20544932/800806842.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/932/20544932/675553665.jpg?w=768"
+    ],
+    "listing_url": "https://www.autoscout24.ch/fr/d/20544932",
+    "teaser": "Voiture Suisse - 1 seul propriétaire - First Edition - Vert Dark Verdant M505 - Etat impeccable - caméra de recul - tempomat - sièges cuir / alcantara - assistance parking - bluetooth - navigation - jantes 20' - sièges électrique avec fonction mémoire - Hifi KEF",
+    "local_images": [
+      "lotus-emira-20544932-01.jpg",
+      "lotus-emira-20544932-02.jpg",
+      "lotus-emira-20544932-03.jpg",
+      "lotus-emira-20544932-04.jpg",
+      "lotus-emira-20544932-05.jpg",
+      "lotus-emira-20544932-06.jpg",
+      "lotus-emira-20544932-07.jpg",
+      "lotus-emira-20544932-08.jpg",
+      "lotus-emira-20544932-09.jpg",
+      "lotus-emira-20544932-10.jpg",
+      "lotus-emira-20544932-11.jpg",
+      "lotus-emira-20544932-12.jpg",
+      "lotus-emira-20544932-13.jpg",
+      "lotus-emira-20544932-14.jpg"
+    ],
+    "sold_date": "2026-07-03"
   }
 ]
