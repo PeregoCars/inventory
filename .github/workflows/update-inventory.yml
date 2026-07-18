@@ -2,7 +2,7 @@ name: Update Perego Cars Inventory
 
 on:
   schedule:
-    - cron: '0 8 * * 1,3,5'
+    - cron: '30 5 * * *'  # quotidien 05:30 UTC (07:30 CH) - les prix AS24 changent tous les jours
   workflow_dispatch:
 
 permissions:
