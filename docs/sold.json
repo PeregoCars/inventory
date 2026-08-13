@@ -1943,5 +1943,57 @@
       "ferrari-458-12918611-15.jpg"
     ],
     "sold_date": "2026-08-06"
+  },
+  {
+    "id": "11461099",
+    "make": "Porsche",
+    "model": "911",
+    "full_name": "911 GT3 Touring",
+    "price": 155900,
+    "mileage": 15370,
+    "year": 2018,
+    "horsepower": 500,
+    "fuel_type": "petrol",
+    "transmission": "manual",
+    "body_type": "coupe",
+    "images": [
+      "https://images.autoscout24.ch/public/listing/99/11461099/419971394.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/99/11461099/1713742723.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/99/11461099/1772375314.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/99/11461099/481169650.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/99/11461099/167328266.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/99/11461099/1694992496.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/99/11461099/193792365.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/99/11461099/1781588517.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/99/11461099/2126117365.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/99/11461099/1286273904.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/99/11461099/1193614595.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/99/11461099/1825116624.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/99/11461099/43699937.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/99/11461099/845012655.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/99/11461099/792694159.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/99/11461099/643594627.jpg?w=768"
+    ],
+    "listing_url": "https://www.autoscout24.ch/fr/d/11461099",
+    "teaser": "Caméra de recule | Bose Surround Sound | Sièges baquets carbon | Lift system | Services suivis",
+    "local_images": [
+      "porsche-911-11461099-01.jpg",
+      "porsche-911-11461099-02.jpg",
+      "porsche-911-11461099-03.jpg",
+      "porsche-911-11461099-04.jpg",
+      "porsche-911-11461099-05.jpg",
+      "porsche-911-11461099-06.jpg",
+      "porsche-911-11461099-07.jpg",
+      "porsche-911-11461099-08.jpg",
+      "porsche-911-11461099-09.jpg",
+      "porsche-911-11461099-10.jpg",
+      "porsche-911-11461099-11.jpg",
+      "porsche-911-11461099-12.jpg",
+      "porsche-911-11461099-13.jpg",
+      "porsche-911-11461099-14.jpg",
+      "porsche-911-11461099-15.jpg",
+      "porsche-911-11461099-16.jpg"
+    ],
+    "sold_date": "2026-08-13"
   }
 ]
