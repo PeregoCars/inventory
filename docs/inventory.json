@@ -1,5 +1,44 @@
 [
   {
+    "id": "20720527",
+    "make": "Porsche",
+    "model": "CAYENNE",
+    "full_name": "Cayenne E-Hybrid",
+    "price": 36900,
+    "mileage": 160000,
+    "year": 2018,
+    "horsepower": 462,
+    "fuel_type": "phev-petrol",
+    "transmission": "automatic",
+    "body_type": "suv",
+    "images": [
+      "https://images.autoscout24.ch/public/listing/527/20720527/1218748977.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/527/20720527/1782665154.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/527/20720527/1606485510.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/527/20720527/1590311770.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/527/20720527/194508566.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/527/20720527/862317900.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/527/20720527/1182572927.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/527/20720527/1341388850.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/527/20720527/1093475220.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/527/20720527/2031835581.jpg?w=768"
+    ],
+    "listing_url": "https://www.autoscout24.ch/fr/d/20720527",
+    "teaser": "Voiture Suisse - intérieur bi-couleur avec sûre-piqures en finition - tous les services suivis chez Porsche - pack chrono sport - toit panoramique - keyless go - système Bose - sièges chauffants - sièges électriques avec lombaire - tempomat adaptatif (ACC) - hayon arrière automatique - jantes 21' - la voiture sera vendue avec une expertise du jour et une garantie quality one de 12 mois",
+    "local_images": [
+      "porsche-cayenne-20720527-01.jpg",
+      "porsche-cayenne-20720527-02.jpg",
+      "porsche-cayenne-20720527-03.jpg",
+      "porsche-cayenne-20720527-04.jpg",
+      "porsche-cayenne-20720527-05.jpg",
+      "porsche-cayenne-20720527-06.jpg",
+      "porsche-cayenne-20720527-07.jpg",
+      "porsche-cayenne-20720527-08.jpg",
+      "porsche-cayenne-20720527-09.jpg",
+      "porsche-cayenne-20720527-10.jpg"
+    ]
+  },
+  {
     "id": "20664627",
     "make": "Porsche",
     "model": "PANAMERA",
@@ -178,7 +217,7 @@
       "https://images.autoscout24.ch/public/listing/344/20659344/1157116064.jpg?w=768"
     ],
     "listing_url": "https://www.autoscout24.ch/fr/d/20659344",
-    "teaser": "Voiture Suisse - Garantie Mercedes - Service gratuit jusqu'à 100'000 km - Version Activity - 4x4 - Crochet d attelage - Tempomat adaptatif (ACC) - caméra de recul - assistance parking - sièges chauffants - attelage - cuir - jantes 17'' - vendu avec une expertise du jour",
+    "teaser": "Voiture Suisse - Garantie Mercedes - Service gratuit jusqu'à 100'000 km - Version Activity - 4x4 - Crochet d attelage - Tempomat - caméra de recul - assistance parking - sièges chauffants - attelage - cuir - jantes 17'' - vendu avec une expertise du jour",
     "local_images": [
       "mercedes-benz-20659344-01.jpg",
       "mercedes-benz-20659344-02.webp",
