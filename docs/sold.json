@@ -2449,5 +2449,57 @@
       "ferrari-ff-20544253-15.jpg"
     ],
     "sold_date": "2026-09-26"
+  },
+  {
+    "id": "20805106",
+    "make": "Porsche",
+    "model": "CAYENNE",
+    "full_name": "Cayenne S",
+    "price": 36900,
+    "mileage": 147350,
+    "year": 2018,
+    "horsepower": 440,
+    "fuel_type": "petrol",
+    "transmission": "automatic",
+    "body_type": "suv",
+    "images": [
+      "https://images.autoscout24.ch/public/listing/106/20805106/1833635615.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/106/20805106/1133234200.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/106/20805106/1324859535.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/106/20805106/2144054671.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/106/20805106/89880849.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/106/20805106/1615717575.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/106/20805106/11522284.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/106/20805106/850419054.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/106/20805106/1067477726.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/106/20805106/146357399.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/106/20805106/1764148817.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/106/20805106/1664134926.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/106/20805106/387304767.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/106/20805106/1573829216.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/106/20805106/2115186000.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/106/20805106/1482471983.jpg?w=768"
+    ],
+    "listing_url": "https://www.autoscout24.ch/fr/d/20805106",
+    "teaser": "Voiture Suisse - services suivis - sièges full électriques avec réglage lombaire et mémoire - sièges chauffants - tempomat adaptatif - système Hifi Burmeister - assistance à la conduite (lane assist/ assistance collision....) - détecteur angle mort - jantes 20' sport design - caméra - bluetooth - navigation - pack aluminium extérieur - vitres teintées - vendue avec service à jour., expertise du jour et une garantie de 12 mois quality one",
+    "local_images": [
+      "porsche-cayenne-20805106-01.jpg",
+      "porsche-cayenne-20805106-02.jpg",
+      "porsche-cayenne-20805106-03.jpg",
+      "porsche-cayenne-20805106-04.jpg",
+      "porsche-cayenne-20805106-05.jpg",
+      "porsche-cayenne-20805106-06.jpg",
+      "porsche-cayenne-20805106-07.jpg",
+      "porsche-cayenne-20805106-08.jpg",
+      "porsche-cayenne-20805106-09.jpg",
+      "porsche-cayenne-20805106-10.jpg",
+      "porsche-cayenne-20805106-11.jpg",
+      "porsche-cayenne-20805106-12.jpg",
+      "porsche-cayenne-20805106-13.jpg",
+      "porsche-cayenne-20805106-14.jpg",
+      "porsche-cayenne-20805106-15.jpg",
+      "porsche-cayenne-20805106-16.jpg"
+    ],
+    "sold_date": "2026-10-02"
   }
 ]
