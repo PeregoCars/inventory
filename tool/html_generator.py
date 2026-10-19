@@ -381,8 +381,11 @@ def _compute_selling_points(listing, all_listings):
     if "suisse" in teaser or "swiss" in teaser:
         points.append(("shield", "Vehicule suisse", "Entretien et historique suisse"))
 
-    # 8. Brand-new / unregistered
-    if "neuf" in teaser or "13.20" in teaser or (mileage and mileage < 100):
+    # 8. Brand-new / unregistered — explicit markers only. A bare "neuf" also
+    # matches "etat de neuf", "embrayage neuf", "boutons interieurs neuf" on used
+    # cars (Ferrari 599 12015323, 2026-10-19), so it no longer counts on its own.
+    new_marker = re.search(r"non[ -]?immatricul|v[eé]hicule neuf|voiture neuve|\b13\.20\b", teaser)
+    if (new_marker or (mileage and mileage < 100)) and not (mileage and mileage > 1000):
         points.append(("star", "Neuf / non immatricule", "Vehicule sans premiere mise en circulation"))
 
     # 9. Full options / PPF
