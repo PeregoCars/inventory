@@ -2599,5 +2599,57 @@
       "porsche-cayenne-20720527-13.jpg"
     ],
     "sold_date": "2026-11-06"
+  },
+  {
+    "id": "20963928",
+    "make": "Porsche",
+    "model": "911",
+    "full_name": "911 Cabrio Carrera 4S PDK",
+    "price": 58900,
+    "mileage": 83450,
+    "year": 2009,
+    "horsepower": 385,
+    "fuel_type": "petrol",
+    "transmission": "semi-automatic",
+    "body_type": "cabriolet",
+    "images": [
+      "https://images.autoscout24.ch/public/listing/928/20963928/759031703.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/928/20963928/554543502.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/928/20963928/1888261573.webp?w=768",
+      "https://images.autoscout24.ch/public/listing/928/20963928/92639775.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/928/20963928/864785012.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/928/20963928/2047616402.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/928/20963928/1067364987.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/928/20963928/1771450507.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/928/20963928/679514350.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/928/20963928/1358291566.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/928/20963928/234440985.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/928/20963928/214021836.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/928/20963928/2001318318.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/928/20963928/1389953702.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/928/20963928/1264534836.jpg?w=768",
+      "https://images.autoscout24.ch/public/listing/928/20963928/1113176894.jpg?w=768"
+    ],
+    "listing_url": "https://www.autoscout24.ch/fr/d/20963928",
+    "teaser": "Voiture Suisse - Porsche Exclusive (+CHF 50'000.- d’options) – Blanc Carrara / cuir Cocoa intégral – capote brune – Sport Chrono Plus – 2e jeu de jantes – sièges chauffants et ventilés – BOSE – Garantie Quality One - Historique suivi  Schweizer Fahrzeug – Porsche Exclusive (+CHF 50'000.– Sonderausstattung) – Carraraweiss / Vollleder Cocoa – Verdeck braun – Sport Chrono Plus – 2. Radsatz – Sitzheizung und Sitzbelüftung – BOSE – Quality One Garantie – Gepflegte Servicehistorie",
+    "local_images": [
+      "porsche-911-20963928-01.jpg",
+      "porsche-911-20963928-02.jpg",
+      "porsche-911-20963928-03.webp",
+      "porsche-911-20963928-04.jpg",
+      "porsche-911-20963928-05.jpg",
+      "porsche-911-20963928-06.jpg",
+      "porsche-911-20963928-07.jpg",
+      "porsche-911-20963928-08.jpg",
+      "porsche-911-20963928-09.jpg",
+      "porsche-911-20963928-10.jpg",
+      "porsche-911-20963928-11.jpg",
+      "porsche-911-20963928-12.jpg",
+      "porsche-911-20963928-13.jpg",
+      "porsche-911-20963928-14.jpg",
+      "porsche-911-20963928-15.jpg",
+      "porsche-911-20963928-16.jpg"
+    ],
+    "sold_date": "2026-11-10"
   }
 ]
