@@ -13,14 +13,15 @@ import os
 import json
 import logging
 import shutil
+import hashlib
 from datetime import datetime
 
 # Ensure imports work from any working directory
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from config import OUTPUT_DIR, IMAGES_DIR, SOLD_IMAGES_DIR, DETAIL_DIR, CACHE_FILE, LOG_DIR, CUSTOM_JSON, CUSTOM_IMAGES_DIR, SOLD_JSON
+from config import OUTPUT_DIR, IMAGES_DIR, SOLD_IMAGES_DIR, DETAIL_DIR, CACHE_FILE, LOG_DIR, CUSTOM_JSON, CUSTOM_IMAGES_DIR, SOLD_JSON, MANUAL_JSON, MANUAL_IMAGES_DIR
 from fetcher import fetch_listings
-from image_handler import download_images, download_sold_images, cleanup_old_images
+from image_handler import download_images, download_sold_images, cleanup_old_images, make_slug
 from html_generator import generate_grid_html, generate_detail_pages, generate_sold_detail_pages, format_chf
 
 
@@ -158,6 +159,63 @@ def print_summary(listings, added, removed, price_changes):
     print("=" * 50 + "\n")
 
 
+# Showroom photo that AutoScout24 listings carry (usually in 2nd position).
+# Useful on AutoScout24, redundant on peregocars.com: left out of the site galleries.
+SHOWROOM_PHOTO_MD5 = {
+    "b1e41cb769304ce76421d5f7a8add035",
+    "cc1c2cee76366f1f7ea9d534705ce78e",
+}
+
+
+def drop_showroom_photo(local_images):
+    kept = []
+    for name in local_images:
+        try:
+            with open(os.path.join(IMAGES_DIR, name), "rb") as f:
+                if hashlib.md5(f.read()).hexdigest() in SHOWROOM_PHOTO_MD5:
+                    continue
+        except OSError:
+            pass
+        kept.append(name)
+    return kept
+
+
+def load_manual_listings(as24_ids):
+    """Cars shown on the site only (manual_listings.json). An AutoScout24 listing with the same id wins."""
+    if not os.path.exists(MANUAL_JSON):
+        return []
+    with open(MANUAL_JSON, "r", encoding="utf-8") as f:
+        entries = json.load(f)
+    out = []
+    for e in entries:
+        lid = str(e.get("id", "")).strip()
+        if not lid or lid in as24_ids:
+            continue
+        car = {"make": "", "model": "", "full_name": "", "price": 0, "mileage": 0, "year": 0,
+               "horsepower": 0, "fuel_type": None, "transmission": None, "body_type": "",
+               "teaser": "", **e, "id": lid, "images": [], "listing_url": "", "manual": True}
+        if not car["full_name"]:
+            car["full_name"] = f"{car['make']} {car['model']}".strip()
+        out.append(car)
+    return out
+
+
+def copy_manual_images(listing):
+    """manual-images/<id>/* (sorted) -> docs/images/<slug>-NN.ext; returns local filenames."""
+    src = os.path.join(MANUAL_IMAGES_DIR, listing["id"])
+    if not os.path.isdir(src):
+        return []
+    slug = make_slug(listing["make"], listing["model"], listing["id"])
+    files = sorted(f for f in os.listdir(src) if f.lower().endswith((".jpg", ".jpeg", ".png", ".webp")))
+    local = []
+    for i, name in enumerate(files):
+        ext = name.rsplit(".", 1)[1].lower().replace("jpeg", "jpg")
+        dest = f"{slug}-{i + 1:02d}.{ext}"
+        shutil.copyfile(os.path.join(src, name), os.path.join(IMAGES_DIR, dest))
+        local.append(dest)
+    return local
+
+
 def main():
     setup_logging()
     logger = logging.getLogger(__name__)
@@ -177,6 +235,11 @@ def main():
 
     print(f"Found {len(listings)} listings")
 
+    manual = load_manual_listings({str(l["id"]) for l in listings})
+    if manual:
+        listings.extend(manual)
+        print(f"Added {len(manual)} site-only listings (manual_listings.json)")
+
     # 2. Check for changes
     old_listings = load_cache()
     added, removed, price_changes = detect_changes(old_listings, listings)
@@ -192,7 +255,8 @@ def main():
     print("Downloading images...")
     os.makedirs(IMAGES_DIR, exist_ok=True)
     for listing in listings:
-        listing["local_images"] = download_images(listing)
+        listing["local_images"] = copy_manual_images(listing) if listing.get("manual") else download_images(listing)
+        listing["local_images"] = drop_showroom_photo(listing["local_images"])
         count = len(listing["local_images"])
         if count:
             print(f"  {listing['make']} {listing['model']}: {count} images")

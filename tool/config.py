@@ -35,6 +35,8 @@ IMAGE_BASE_URL = f"{GITHUB_PAGES_URL}/images"  # Public URL for images
 
 # ── Custom Data ──
 CUSTOM_JSON = os.path.join(ROOT_DIR, "custom.json")  # Backdoor custom data committed in repo root
+MANUAL_JSON = os.path.join(ROOT_DIR, "manual_listings.json")  # Cars shown on the site only (not on AutoScout24)
+MANUAL_IMAGES_DIR = os.path.join(ROOT_DIR, "manual-images")  # manual-images/<id>/*.jpg, copied into docs/images
 SOLD_JSON = os.path.join(OUTPUT_DIR, "sold.json")  # Archived sold cars
 SOLD_IMAGES_DIR = os.path.join(OUTPUT_DIR, "sold-images")
 SOLD_IMAGES_URL = f"{GITHUB_PAGES_URL}/sold-images"

@@ -548,6 +548,9 @@ def generate_detail_pages(listings, custom_data=None):
         context.update(_seo_context(listing, slug, is_sold=False))
 
         page = _render(detail_tpl, context)
+        if listing.get("manual"):
+            # Site-only car: no AutoScout24 link
+            page = re.sub(r'\s*<a href="[^"]*"[^>]*class="pcd-as-link">.*?</a>', '', page, flags=re.S)
         pages[slug] = page
 
     logger.info(f"Generated {len(pages)} detail pages")
@@ -683,6 +686,9 @@ def generate_sold_detail_pages(sold_listings, active_listings, custom_data=None)
         context.update(_seo_context(listing, slug, is_sold=True))
 
         page = _render(detail_tpl, context)
+        if listing.get("manual"):
+            # Site-only car: no AutoScout24 link
+            page = re.sub(r'\s*<a href="[^"]*"[^>]*class="pcd-as-link">.*?</a>', '', page, flags=re.S)
         pages[slug] = page
 
     logger.info(f"Generated {len(pages)} sold detail pages")
