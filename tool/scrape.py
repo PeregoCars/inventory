@@ -19,7 +19,7 @@ from datetime import datetime
 # Ensure imports work from any working directory
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from config import OUTPUT_DIR, IMAGES_DIR, SOLD_IMAGES_DIR, DETAIL_DIR, CACHE_FILE, LOG_DIR, CUSTOM_JSON, CUSTOM_IMAGES_DIR, SOLD_JSON, MANUAL_JSON, MANUAL_IMAGES_DIR
+from config import OUTPUT_DIR, IMAGES_DIR, SOLD_IMAGES_DIR, DETAIL_DIR, CACHE_FILE, LOG_DIR, CUSTOM_JSON, CUSTOM_IMAGES_DIR, SOLD_JSON, MANUAL_JSON, MANUAL_IMAGES_DIR, IMAGE_BASE_URL
 from fetcher import fetch_listings
 from image_handler import download_images, download_sold_images, cleanup_old_images, make_slug
 from html_generator import generate_grid_html, generate_detail_pages, generate_sold_detail_pages, format_chf
@@ -213,6 +213,8 @@ def copy_manual_images(listing):
         dest = f"{slug}-{i + 1:02d}.{ext}"
         shutil.copyfile(os.path.join(src, name), os.path.join(IMAGES_DIR, dest))
         local.append(dest)
+    # The cars-for-sale page takes the card photo from images[0]
+    listing["images"] = [f"{IMAGE_BASE_URL}/{name}" for name in local]
     return local
 
 
@@ -237,7 +239,7 @@ def main():
 
     manual = load_manual_listings({str(l["id"]) for l in listings})
     if manual:
-        listings.extend(manual)
+        listings[:0] = manual  # newest arrivals first in the default order
         print(f"Added {len(manual)} site-only listings (manual_listings.json)")
 
     # 2. Check for changes
